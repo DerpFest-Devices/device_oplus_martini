@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_martini.mk
+    $(LOCAL_DIR)/derp_martini.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_martini-user \
-    aosp_martini-userdebug \
-    aosp_martini-eng
+    derp_martini-user \
+    derp_martini-userdebug \
+    derp_martini-eng

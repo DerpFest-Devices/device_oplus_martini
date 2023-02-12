@@ -11,17 +11,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from martini device
 $(call inherit-product, device/oplus/martini/device.mk)
 
-# Inherit some common PixelOS stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common DerpFest stuff.
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
-PRODUCT_NAME := aosp_martini
+PRODUCT_NAME := derp_martini
 PRODUCT_DEVICE := martini
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := MT2111
 
 PRODUCT_SYSTEM_NAME := martini
-PRODUCT_SYSTEM_DEVICE := OP5155L1
+PRODUCT_SYSTEM_DEVICE := OnePlus9RT
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
@@ -31,3 +31,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
 
 BUILD_FINGERPRINT := OnePlus/martini/OP5155L1:13/TP1A.220624.014/R.202208300852:user/release-keys
+
+#DerpFest
+DERP_BUILDTYPE := Official
+EXTRA_UDFPS_ANIMATIONS := true
